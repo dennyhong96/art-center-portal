@@ -1,15 +1,23 @@
 {
-  "name": "art-center",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.0.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  }
+	"name": "art-center",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"svg": "svgr -d src/components/icons src/components/icons/svgs"
+	},
+	"dependencies": {
+		"classnames": "^2.2.6",
+		"framer-motion": "^3.6.7",
+		"next": "10.0.7",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"styled-components": "^5.2.1",
+		"styled-reset": "^4.3.4"
+	},
+	"devDependencies": {
+		"@svgr/cli": "^5.5.0"
+	}
 }
