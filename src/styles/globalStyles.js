@@ -24,6 +24,24 @@ const GlobalStyles = createGlobalStyle`
     background-color: #f2f2f2;
     color: #333;
   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font: inherit;
+  }
+
+  button {
+    display: inline-block;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
 `;
 
 export default GlobalStyles;
