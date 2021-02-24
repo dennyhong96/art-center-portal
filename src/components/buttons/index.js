@@ -6,10 +6,10 @@ export const IconButton = styled.button`
 	border-radius: 5px;
 	padding: 1rem;
 	background-color: transparent;
-	transition: 0.3s ease-out;
+	transition: ${({ theme }) => theme.transitions.default};
 
 	&:hover {
-		background-color: #f0f0f0;
+		background-color: ${({ theme }) => theme.colors.buttonBG};
 	}
 
 	& svg {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { IconButton } from "@/components/button";
+import { IconButton } from "@/components/buttons";
 import { IconBell, IconUser } from "@/components/icons";
 
 import {

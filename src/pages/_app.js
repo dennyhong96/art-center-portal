@@ -1,12 +1,17 @@
-import Layout from "@/components/layout";
+import { ThemeProvider } from "styled-components";
+
+import theme from "@/styles/theme";
 import GlobalStyles from "@/styles/globalStyles";
+import Layout from "@/components/layout";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
-			<GlobalStyles />
-			<Component {...pageProps} />
-		</Layout>
+		<ThemeProvider theme={theme}>
+			<Layout>
+				<GlobalStyles />
+				<Component {...pageProps} />
+			</Layout>
+		</ThemeProvider>
 	);
 }
 
