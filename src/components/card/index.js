@@ -1,8 +1,10 @@
-import { card } from "./card.module.css";
+import classNames from "classnames";
 
-const Card = ({ children, ...props }) => {
+import styles, { card } from "./card.module.css";
+
+const Card = ({ children, isEmpty = false, ...props }) => {
 	return (
-		<article className={card} {...props}>
+		<article className={classNames(card, { [styles["card--empty"]]: isEmpty })} {...props}>
 			{children}
 		</article>
 	);

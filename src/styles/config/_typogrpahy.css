@@ -2,7 +2,6 @@ h1,
 .h1 {
 	font-size: 6.64rem;
 	font-weight: 800;
-	text-shadow: 3px 3px var(--color-highlight);
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
@@ -11,7 +10,6 @@ h2,
 .h2 {
 	font-size: 2.94rem;
 	font-weight: 700;
-	text-shadow: 3px 3px var(--color-highlight);
 	margin-top: 1.25rem;
 	margin-bottom: 1.25rem;
 }
@@ -20,7 +18,6 @@ h3,
 .h3 {
 	font-size: 2rem;
 	font-weight: 500;
-	text-shadow: 3px 3px var(--color-highlight);
 	margin-top: 1.25rem;
 	margin-bottom: 1.25rem;
 }
@@ -66,10 +63,18 @@ ul li {
 	margin-bottom: 0.8rem;
 } */
 
-em {
+em,
+.em {
 	font-style: italic;
 }
 
-strong {
-	font-weight: 600;
+strong,
+.strong {
+	font-weight: 500;
+}
+
+small,
+.small {
+	font-size: 1.25rem;
+	color: var(--color-text-light);
 }
