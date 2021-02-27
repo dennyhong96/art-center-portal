@@ -1,6 +1,7 @@
-// Test linting
+import Card from "@/components/card";
+
 const Home = () => {
-	return <div className="h1">Hi</div>;
+	return <Card />;
 };
 
 export default Home;
