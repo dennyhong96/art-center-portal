@@ -1,10 +1,10 @@
 :root {
-	--color-background: #07000b;
-	--color-background-alt: #11001c;
-	--color-highlight: #a30292;
-	--color-highlight-alt: #6f02b0;
-	--color-text: #fffafe;
-	--color-text-alt: #fbf6ff;
+	--color-background: #f2f2f2;
+	--color-background-alt: #fff;
+	--color-highlight: #759ff3;
+	/* --color-highlight-alt: #6f02b0; */
+	--color-text: #0d0d0d;
+	--color-text-light: rgba(0, 0, 0, 0.35);
 
 	--sm: 576px;
 	--md: 768px;

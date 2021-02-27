@@ -4,6 +4,7 @@ button {
 	border: none;
 	outline: 3px solid transparent;
 	transition: var(--transition);
+	cursor: pointer;
 }
 button:focus,
 button:active {

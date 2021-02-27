@@ -1,0 +1,22 @@
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item {
+}
+
+.link {
+	color: var(--color-text-light);
+	font-weight: 500;
+	padding: 1rem 1.5rem;
+}
+
+.link--active {
+	color: var(--color-highlight);
+}
+
+.link:hover {
+	color: var(--color-highlight);
+}
