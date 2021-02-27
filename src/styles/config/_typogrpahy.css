@@ -1,0 +1,75 @@
+h1,
+.h1 {
+	font-size: 6.64rem;
+	font-weight: 800;
+	text-shadow: 3px 3px var(--color-highlight);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h2,
+.h2 {
+	font-size: 2.94rem;
+	font-weight: 700;
+	text-shadow: 3px 3px var(--color-highlight);
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+h3,
+.h3 {
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: 3px 3px var(--color-highlight);
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+h4,
+.h4 {
+	font-weight: 500;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.4rem;
+	font-weight: 500;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+h6,
+.h6 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+p,
+.p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: disc;
+	padding-left: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+ul li {
+	margin-top: 0.8rem;
+	margin-bottom: 0.8rem;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 600;
+}

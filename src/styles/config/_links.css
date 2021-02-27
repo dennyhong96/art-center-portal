@@ -1,0 +1,31 @@
+a {
+	color: var(--color-text);
+	font: inherit;
+	text-decoration: none;
+	outline: 2px solid transparent;
+	transition: var(--transition);
+}
+a:visited {
+	color: var(--color-text);
+}
+a:focus {
+	outline: 2px solid var(--color-highlight-alt);
+}
+
+.link {
+	position: relative;
+	width: max-content;
+}
+.link::after {
+	content: "";
+	position: absolute;
+	bottom: -3px;
+	height: 1.5px;
+	left: 0;
+	width: 0;
+	background-color: var(--color-highlight);
+	transition: var(--transition);
+}
+.link:hover::after {
+	width: 100%;
+}

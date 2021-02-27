@@ -1,3 +1,6 @@
-export default function Home() {
-	return <div></div>;
-}
+// Test linting
+const Home = () => {
+	return <div className="h1">Hi</div>;
+};
+
+export default Home;

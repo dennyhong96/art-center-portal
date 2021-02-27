@@ -1,18 +1,10 @@
-import { ThemeProvider } from "styled-components";
-
-import theme from "@/styles/theme";
-import GlobalStyles from "@/styles/globalStyles";
 import Layout from "@/components/layout";
+import "../styles/main.css";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
 	return (
-		<ThemeProvider theme={theme}>
-			<Layout>
-				<GlobalStyles />
-				<Component {...pageProps} />
-			</Layout>
-		</ThemeProvider>
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
 	);
 }
-
-export default MyApp;

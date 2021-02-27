@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+@media (max-width: var(--xl)) {
+	html {
+		font-size: 60%;
+	}
+}
+@media (max-width: var(--lg)) {
+	html {
+		font-size: 57.5%;
+	}
+}
+@media (max-width: var(--md)) {
+	html {
+		font-size: 55%;
+	}
+}
+@media (max-width: var(--sm)) {
+	html {
+		font-size: 52.5%;
+	}
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-background);
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input {
+	font: inherit;
+	padding: 0.75rem;
+	border: none;
+	box-shadow: inset 0 0 0 2px transparent;
+	transition: var(--transition);
+	-webkit-appearance: none;
+	border-radius: 0 !important;
+}
+
+input:focus {
+	outline: none;
+	outline: 3px solid var(--color-highlight-alt);
+}
