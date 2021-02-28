@@ -1,6 +1,5 @@
 import { useState, memo } from "react";
 import classNames from "classnames";
-import { nanoid } from "nanoid";
 
 import styles, { bar, button } from "./sidebar.module.css";
 
@@ -32,11 +31,7 @@ const Sidebar = () => {
 		<aside className={bar}>
 			<nav>
 				{SIDE_BAR_TABS.map((tab, idx) => (
-					<SidebarButton
-						key={`${nanoid}-${idx}`}
-						setActive={() => setActiveTab(idx)}
-						isActive={idx === activeTab}
-					>
+					<SidebarButton key={idx} setActive={() => setActiveTab(idx)} isActive={idx === activeTab}>
 						{tab}
 					</SidebarButton>
 				))}

@@ -1,8 +1,8 @@
-import Card from "@/components/card";
 import classNames from "classnames";
 
-import { UserPlaceholder, Check, Star } from "@/components/icons";
+import Card from "@/components/card";
 import Button from "@/components/button";
+import { UserPlaceholder, Check, Star } from "@/components/icons";
 import { disc, item, active } from "./section-discussion.module.css";
 
 const SectionDiscussion = ({ children }) => {
