@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useRouter } from "next/router";
 import { nanoid } from "nanoid";
 
 import Header from "@/components/header";
@@ -9,13 +10,15 @@ import { Bell, User } from "@/components/icons";
 import { PATHS } from "@/lib/constants";
 
 export default function Layout({ children }) {
+	const router = useRouter();
+
 	return (
 		<Fragment>
 			<Header>
 				<Logo />
 				<Header.Nav>
 					{PATHS.map(({ href, label }) => (
-						<Header.Link href={href} key={nanoid()} isActive={false}>
+						<Header.Link href={href} key={nanoid()} isActive={router.asPath === href}>
 							{label}
 						</Header.Link>
 					))}
