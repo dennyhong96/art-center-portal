@@ -4,7 +4,6 @@ import classNames from "classnames";
 import { Grid, List, Range } from "@/components/icons";
 import Button from "@/components/button";
 import { bar, active } from "./action-bar.module.css";
-import { nanoid } from "nanoid";
 
 const ICONS = [<List key={0} />, <Grid key={1} />, <Range key={2} />];
 
@@ -16,7 +15,7 @@ const ActionBar = () => {
 			{ICONS.map((Icon, idx) => (
 				<Button
 					onClick={setActiveIdx.bind(this, idx)}
-					key={`${nanoid()}-${idx}`}
+					key={idx}
 					className={classNames("", { [active]: activeIdx === idx })}
 					Icon={Icon}
 				/>
