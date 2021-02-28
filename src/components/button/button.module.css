@@ -12,7 +12,11 @@
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
-.icon {
+.btn svg {
 	width: 2rem;
 	height: 2rem;
+}
+
+.btn--both svg {
+	margin-right: 1rem;
 }

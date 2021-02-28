@@ -5,14 +5,7 @@ import Header from "@/components/header";
 import Button from "@/components/button";
 import Logo from "@/components/logo";
 import { Bell, User } from "@/components/icons";
-
-const PATHS = [
-	{ href: "/home", label: "Home" },
-	{ href: "/resources", label: "Resources" },
-	{ href: "/discussion", label: "Discussion" },
-	{ href: "/help-desk", label: "Help Desk" },
-	{ href: "/feedback", label: "Feedback" },
-];
+import { PATHS } from "@/lib/constants";
 
 export default function Layout({ children }) {
 	return (

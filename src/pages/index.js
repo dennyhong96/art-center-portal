@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import Timeline from "@/components/timeline";
 import SectionUpdate from "@/components/sectionUpdate";
 import SectionRequest from "@/components/sectionRequest";
+import SectionAppointments from "@/components/sectionAppointment";
 import { Otter, Slack } from "@/components/icons";
 
 const Home = () => {
@@ -36,10 +37,22 @@ const Home = () => {
 						Icon={<Slack />}
 						brandName="Slack"
 						helpText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-						step={1}
+						step={4}
 					/>
 				</Timeline>
 			</SectionRequest>
+
+			{/* SECTION UPCOMING APPOINTMENTS */}
+			<SectionAppointments>
+				<SectionAppointments.Item
+					date="Aug 23, 2020"
+					time="1:00PM - 1:30PM"
+					createdAt="August 8th, 2020"
+				>
+					Appointment with Alex Monroe
+				</SectionAppointments.Item>
+				<SectionAppointments.Item isEmpty>Add a new Appointment</SectionAppointments.Item>
+			</SectionAppointments>
 		</Fragment>
 	);
 };
