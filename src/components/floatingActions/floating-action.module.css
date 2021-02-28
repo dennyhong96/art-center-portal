@@ -1,0 +1,33 @@
+.container {
+	position: fixed;
+	right: 10rem;
+	bottom: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container > button {
+	padding: 1rem;
+	border-radius: 50%;
+	background-color: #fff;
+	height: 5rem;
+	width: 5rem;
+	color: var(--color-text-light);
+	display: grid;
+	place-content: center;
+	box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.container > button:first-of-type {
+	margin-bottom: 2rem;
+}
+
+.container > button:last-of-type {
+	color: var(--color-brand);
+}
+
+.container > button > svg {
+	height: 2.5rem;
+	width: 2.5rem;
+}

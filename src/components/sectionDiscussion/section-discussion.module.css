@@ -62,7 +62,7 @@
 }
 
 .active {
-	background-color: #fd4700 !important;
+	background-color: var(--color-brand) !important;
 }
 
 .item > button {

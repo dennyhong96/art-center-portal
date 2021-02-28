@@ -4,6 +4,7 @@ import { SECTION_DISCUSSION_DATA } from "@/lib/data";
 import Sidebar from "@/components/sidebar";
 import SectionDiscussion from "@/components/sectionDiscussion";
 import ActionBar from "@/components/actionBar";
+import FloatingActions from "@/components/floatingActions";
 
 const Discussion = () => {
 	return (
@@ -29,6 +30,9 @@ const Discussion = () => {
 				</section>
 				<div />
 			</div>
+
+			{/* FLOATING ACTION BUTTONS */}
+			<FloatingActions />
 		</div>
 	);
 };
