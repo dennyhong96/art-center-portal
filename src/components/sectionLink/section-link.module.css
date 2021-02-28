@@ -3,6 +3,24 @@
 	align-self: center;
 	justify-content: flex-end;
 	margin-top: 1.5rem;
+	position: relative;
+	width: max-content;
+	margin-left: auto;
+}
+
+.link::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--color-text);
+	transition: var(--transition);
+}
+
+.link:hover::after {
+	width: 100%;
 }
 
 .dots {

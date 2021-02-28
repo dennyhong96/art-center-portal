@@ -5,6 +5,7 @@ a {
 	outline: 2px solid transparent;
 	transition: var(--transition);
 }
+
 a:focus {
 	outline: 2px solid var(--color-highlight-alt);
 }
