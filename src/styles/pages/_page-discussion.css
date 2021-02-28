@@ -1,0 +1,5 @@
+.page-discussion {
+	display: grid;
+	grid-template-columns: 30rem 1fr 30rem;
+	gap: 5rem;
+}
