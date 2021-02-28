@@ -1,0 +1,22 @@
+.bar {
+	display: flex;
+	align-items: center;
+}
+
+.bar > button {
+	color: var(--color-text-light);
+	transform: var(--transition);
+}
+
+.bar > button > svg {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.bar > button:not(:last-of-type) {
+	margin-right: 0.5rem;
+}
+
+.active {
+	color: var(--color-highlight) !important;
+}

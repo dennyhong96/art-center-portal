@@ -1,0 +1,73 @@
+.disc {
+}
+
+.disc > article {
+	display: grid;
+	gap: 2.5rem;
+}
+
+.item {
+	display: grid;
+	grid-template-columns: 1fr 7fr 1fr;
+	gap: 3rem;
+}
+
+.item > svg {
+	width: 100%;
+	height: 100%;
+}
+
+.item > div {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 1.5rem 0;
+	justify-content: space-between;
+}
+
+.item > div > div:first-of-type {
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.item > div > div:first-of-type > h4,
+.item > div > div:first-of-type > small {
+	display: block;
+	margin: 0;
+	line-height: initial;
+}
+
+.item > div > div:last-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.item > div > div:last-of-type > span:first-of-type {
+	height: 2rem;
+	width: 2rem;
+	background-color: var(--color-text-light);
+	display: grid;
+	place-content: center;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.item > div > div:last-of-type > span:first-of-type > svg {
+	height: 1.75rem;
+	width: 1.75rem;
+}
+
+.active {
+	background-color: #fd4700 !important;
+}
+
+.item > button {
+	align-self: flex-start;
+	justify-self: flex-end;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}

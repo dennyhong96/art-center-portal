@@ -1,4 +1,18 @@
 .page-discussion {
+}
+
+.page-discussion__header {
+	display: grid;
+	grid-template-columns: 30rem 1fr 30rem;
+	gap: 5rem;
+	margin: 3rem 0;
+}
+
+.page-discussion__header > div:nth-of-type(2) {
+	justify-self: end;
+}
+
+.page-discussion__inner {
 	display: grid;
 	grid-template-columns: 30rem 1fr 30rem;
 	gap: 5rem;
