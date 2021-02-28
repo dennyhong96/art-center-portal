@@ -5,6 +5,7 @@ import SectionUpdate from "@/components/sectionUpdate";
 import SectionRequest from "@/components/sectionRequest";
 import SectionAppointments from "@/components/sectionAppointment";
 import { Otter, Slack } from "@/components/icons";
+import SectionResources from "@/components/sectionResources";
 
 const Home = () => {
 	return (
@@ -53,6 +54,30 @@ const Home = () => {
 				</SectionAppointments.Item>
 				<SectionAppointments.Item isEmpty>Add a new Appointment</SectionAppointments.Item>
 			</SectionAppointments>
+
+			{/* SECTION RESOURCES */}
+			<SectionResources linkHref="/" linkLabel="View more resources">
+				<SectionResources.Item
+					title="Tips and tricks on Google Drive"
+					topic="Teaching Online"
+					date="4th July 2020"
+					time="4:24PM"
+				>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita nam ullam fugit et
+					voluptatem officia, numquam, quia eius beatae impedit! Voluptas voluptates eum, aspernatur
+					ipsum repellat architecto? Dolor, molestias!
+				</SectionResources.Item>
+				<SectionResources.Item
+					title="Tips and tricks on Google Drive"
+					topic="Teaching Online"
+					date="4th July 2020"
+					time="4:24PM"
+				>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita nam ullam fugit et
+					voluptatem officia, numquam, quia eius beatae impedit! Voluptas voluptates eum, aspernatur
+					ipsum repellat architecto? Dolor, molestias!
+				</SectionResources.Item>
+			</SectionResources>
 		</Fragment>
 	);
 };

@@ -5,4 +5,5 @@ export { default as Date } from "./Date";
 export { default as Otter } from "./Otter";
 export { default as Plus } from "./Plus";
 export { default as Slack } from "./Slack";
+export { default as Star } from "./Star";
 export { default as User } from "./User";

@@ -11,14 +11,4 @@ const SectionRequest = ({ children, ...props }) => {
 	);
 };
 
-// const SectionUpdateTitle = ({ children }) => <h2>{children}</h2>;
-// const SectionUpdateText = ({ children }) => <p>{children}</p>;
-// const SectionUpdateDate = ({ children }) => (
-// 	<small className={classNames("strong", { [dateStyles]: dateStyles })}>{children}</small>
-// );
-
-// SectionRequest.Title = SectionUpdateTitle;
-// SectionRequest.Text = SectionUpdateText;
-// SectionRequest.Date = SectionUpdateDate;
-
 export default SectionRequest;
