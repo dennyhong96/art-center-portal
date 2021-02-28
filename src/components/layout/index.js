@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { nanoid } from "nanoid";
 
 import Header from "@/components/header";
+import Footer from "../footer";
 import Button from "@/components/button";
 import Logo from "@/components/logo";
 import { Bell, User } from "@/components/icons";
@@ -26,6 +27,7 @@ export default function Layout({ children }) {
 				</Header.Toolbar>
 			</Header>
 			<main>{children}</main>
+			<Footer />
 		</Fragment>
 	);
 }
